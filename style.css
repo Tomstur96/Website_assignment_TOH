@@ -1,0 +1,338 @@
+/* Initial Setup CSS - Start */
+
+@font-face {
+    font-family: 'RobotoFlex';
+    font-display: swap;
+    font-weight: 100 900;
+    src: url('assets/fonts/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf')
+        format('truetype');
+}
+
+:root {
+    --bg-hero-primary-hex: #1f2937;
+    --text-hero-primary-hex: #f9faf8;
+    --text-hero-secondary-hex: #e5e7eb;
+    --text-logo-primary-hex: #f9faf8;
+    --text-std-primary-hex: #000;
+
+
+    --bg-cta-primary-hex:#3882f6;
+    --bg-cta-hover-hex: #669cf3;   
+    --text-info-primary-hex:#1f2937;
+
+    --bg-std-primary-hex: #ffffff; 
+
+    --bg-quote-primary-hex:#e5e7eb;
+    --text-quote-primary-hex:#1f2937;
+
+    --font-family-default: 'RobotoFlex';
+
+    --fw-light: 200;
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-black: 800;
+    
+
+    --fs-48px: 3rem;
+    --fs-18px: 1.125rem;
+    --fs-24px: 1.5rem;
+    --fs-36px: 2.25rem;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font: inherit;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Initial Setup CSS - End */
+
+/* Base styles - CSS - Start */
+
+body {
+    font-family: var(--font-family-default);
+    font-size: var(--fs-24px);
+    color: var(--text-hero-secondary-hex);   
+}
+
+@media (min-width: 600px) {
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
+
+.container-1, .footer {
+    background-color: var(--bg-hero-primary-hex);
+}
+
+.hero-button:hover, .hero-button:focus-visible {
+    background: var(--bg-cta-hover-hex);
+}
+
+.hero-button {
+    color: var(--text-hero-primary-hex);
+    line-height: .5;
+    background: var(--bg-cta-primary-hex);
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 150px;
+    margin-top: 10px;
+}
+
+.para-container > h1 {
+    font-size: var(--fs-48px);
+    font-weight: var(--fw-bold);
+    color: var(--text-hero-primary-hex);
+}
+
+.para-container > div, a {
+    font-size: var(--fs-18px);
+    font-weight: var(--fw-regular);
+    color: var(--text-hero-secondary-hex);
+}   
+/* Base styles - CSS - End */
+
+
+
+/* Header styles -CSS - Start */
+
+.container-1-1 {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    padding: 0px calc((0% + 300px)/2) 50px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.logo   {
+    display: flex;
+    align-items: center;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.sub-container {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    flex-grow: 1;
+}
+
+.para {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+
+.para-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.xs-para {
+    max-width: 65%;
+}
+
+.placeholder-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-quote-primary-hex);
+    color: var(--text-quote-primary-hex);
+    flex: 1 0 45%;
+}
+
+/* Header styles - CSS - End */
+
+
+/* Section 2 styles - CSS - Start */
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--bg-std-primary-hex);
+    min-height: 50vh;
+    padding: 0px 150px 75px 150px
+}
+
+.container-2 > h1 {
+    font-size: var(--fs-36px);
+    font-weight: var(--fw-bold);
+    color: var(--text-info-primary-hex);
+}
+
+.square-boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 20px;
+}
+
+.shape  {
+    width: 150px;
+    height: 150px;
+    border: 5px solid var(--bg-cta-primary-hex);
+    border-radius: 20px;
+}
+
+.sub-text {
+    font-size: var(--fs-18px);
+    font-weight: var(--fw-regular);
+    color: var(--text-std-primary-hex);
+    max-width: 150px;
+    text-align: center;
+}
+
+
+
+/* Section 2 styles - CSS - End */
+
+
+/* Section 3 styles - CSS - Start */
+
+.container-3{
+    background-color: var(--bg-quote-primary-hex);
+}
+.container-3-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 50vh;
+    padding: 50px calc((0% + 600px)/2);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 100px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.quote-text {
+    font-size: var(--fs-36px);
+    font-style: italic;
+    font-weight: var(--fw-light);
+    color: var(--text-quote-primary-hex);
+}
+
+.quote-author {
+    font-size: var(--fs-24px);
+    font-weight: var(--fw-bold);
+    color: var(--text-quote-primary-hex);
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Section 3 styles - CSS - End */
+
+
+/* Section 4 styles - CSS - Start */
+
+.container-4 {
+    padding: 100px calc((0% + 300px)/2);
+    max-width: 1440px;
+}
+
+.CTA-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: var(--bg-cta-primary-hex);
+    border-radius: 20px;
+    padding: 50px calc((0% + 200px)/2);
+    gap: 150px;
+}
+
+.CTA-text > h1 {
+    font-size: var(--fs-24px);
+    font-weight: var(--fw-bold);
+}
+
+.CTA-text > div {
+    font-size: var(--fs-18px);
+    font-weight: var(--fw-regular);
+}
+
+.CTA-button {
+    color: var(--text-hero-primary-hex);
+    line-height: .5;
+    background: var(--bg-cta-primary-hex);
+    padding: 1rem 2rem;
+    border: 2px solid var(--bg-std-primary-hex);
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 150px;
+    margin-top: 10px;
+}
+
+
+/* Section 4 styles - CSS End */
+
+
+
+/* Footer styles - CSS - Start */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+
+
+/* Footer styles - CSS - End */
