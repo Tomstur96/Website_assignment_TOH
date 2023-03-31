@@ -291,10 +291,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    flex-wrap: wrap;
     background-color: var(--bg-cta-primary-hex);
     border-radius: 20px;
     padding: 50px calc((0% + 200px)/2);
-    gap: 150px;
+    gap: 75px;
 }
 
 .CTA-text > h1 {
